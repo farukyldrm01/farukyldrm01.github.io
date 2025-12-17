@@ -16,53 +16,103 @@
 
 <body>
 
-  <div class="bento-grid">
+  <main class="page">
+
+    <header class="page-header">
+      <div class="page-header-text">
+        <span class="pill">Portfolio</span>
+        <h1 class="page-title">Faruk Yildirim</h1>
+        <p class="page-subtitle">
+          Frontend ağırlıklı, tasarım odaklı bir geliştirici. Modern arayüzler, hızlı deneyimler
+          ve sade ama şık ürünler tasarlamayı seviyorum.
+        </p>
+      </div>
+      <div class="page-header-actions">
+        <a href="mailto:email@example.com" class="btn btn-primary">Benimle çalış</a>
+        <a href="#projects" class="btn btn-ghost">Projeler</a>
+      </div>
+    </header>
+
+    <div class="bento-grid">
 
     <!-- 1. Profile Card (2x2) -->
     <div class="card card-profile">
       <div class="profile-content">
         <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Faruk" alt="Profile" class="profile-image">
-        <h1>Faruk Yildirim</h1>
-        <p>Yaratıcı Geliştirici & UI Tutkunu.</p>
+        <h2>Faruk Yildirim</h2>
+        <p>Yaratıcı geliştirici & UI tutkunu.</p>
+        <div class="profile-tags">
+          <span>Frontend</span>
+          <span>React</span>
+          <span>Design Systems</span>
+        </div>
+        <div class="profile-meta">
+          <span class="meta-item">
+            <ion-icon name="sparkles-outline"></ion-icon>
+            Şu an: Kişisel projeler & deneyler
+          </span>
+          <span class="meta-item">
+            <ion-icon name="time-outline"></ion-icon>
+            4+ yıl web üzerine
+          </span>
+        </div>
       </div>
     </div>
 
     <!-- 2. Location (1x1) -->
     <div class="card card-location">
-      <span class="label">İstanbul, TR</span>
-      <div style="position: absolute; bottom: 1.5rem; right: 1.5rem;">
-        <ion-icon name="location" style="font-size: 2rem;"></ion-icon>
+      <div class="location-header">
+        <span class="label">İstanbul, TR</span>
+        <span class="location-pill">UTC+3 · Remote friendly</span>
+      </div>
+      <div class="location-footer">
+        <span>Şehir karmaşasından ilham alan sade arayüzler.</span>
+        <ion-icon name="location"></ion-icon>
       </div>
     </div>
 
     <!-- 3. Social: Twitter/X (1x1) -->
-    <a href="#" class="card card-social" target="_blank">
+    <a href="#" class="card card-social card-social-twitter" target="_blank" aria-label="Twitter / X profili">
       <ion-icon name="logo-twitter"></ion-icon>
     </a>
 
     <!-- 4. Stack (1x2 Vertical) -->
     <div class="card card-stack">
-      <h3>Tech Stack</h3>
+      <h3>Tech stack</h3>
       <ul class="stack-list">
-        <li><ion-icon name="logo-react"></ion-icon> React</li>
+        <li><ion-icon name="logo-react"></ion-icon> React / Next.js</li>
         <li><ion-icon name="logo-javascript"></ion-icon> TypeScript</li>
-        <li><ion-icon name="logo-nodejs"></ion-icon> Node.js</li>
-        <li><ion-icon name="color-palette"></ion-icon> Tailwind</li>
+        <li><ion-icon name="logo-nodejs"></ion-icon> Node.js / API</li>
+        <li><ion-icon name="color-palette"></ion-icon> Tailwind & tasarım sistemleri</li>
       </ul>
     </div>
 
     <!-- 5. Social: GitHub (1x1) -->
-    <a href="#" class="card card-social" target="_blank">
+    <a href="#" class="card card-social card-social-github" target="_blank" aria-label="GitHub profili">
       <ion-icon name="logo-github"></ion-icon>
     </a>
 
-    <!-- 6. Quote (1x1) -->
+    <!-- 6. Contact (1x1) -->
+    <a href="mailto:email@example.com" class="card card-social card-contact">
+      <div class="card-contact-inner">
+        <div>
+          <p class="contact-label">İletişim</p>
+          <p class="contact-text">Bir fikrin mi var? Bir mail kadar uzağındayım.</p>
+        </div>
+        <div class="contact-icon">
+          <ion-icon name="mail"></ion-icon>
+        </div>
+      </div>
+    </a>
+
+    <!-- 7. Quote (1x1) -->
     <div class="card card-text">
-      "Simplicity is the ultimate sophistication."
+      <span class="quote-mark">“</span>
+      <p>Sadelik, karmaşık olanı gizlemek değil, gerçekten neyin önemli olduğunu göstermektir.</p>
     </div>
 
-    <!-- 7. Work: Project 1 (2x1 Wide) -->
-    <a href="#" class="card card-project">
+    <!-- 8. Work: Project 1 (2x1 Wide) -->
+    <a href="#" class="card card-project" id="projects">
       <div>
         <h3>Modern E-Commerce</h3>
         <span class="tag">Next.js</span>
@@ -72,7 +122,7 @@
       </div>
     </a>
 
-    <!-- 8. Work: Project 2 (2x1 Wide) -->
+    <!-- 9. Work: Project 2 (2x1 Wide) -->
     <a href="#" class="card card-project">
       <div>
         <h3>Personal Blog</h3>
@@ -83,15 +133,21 @@
       </div>
     </a>
 
-    <!-- 9. Contact (1x1) -->
-    <a href="mailto:email@example.com" class="card card-social" style="background: #007AFF; color: white;">
-      <ion-icon name="mail"></ion-icon>
-    </a>
-
   </div>
 
+  <footer class="page-footer">
+    <span>© <span id="year"></span> Faruk Yildirim</span>
+    <span class="dot"></span>
+    <span>Sade, hızlı ve odaklı web deneyimleri.</span>
+  </footer>
+
+  </main>
+
   <!-- No complex JS needed for this layout, but keeping file for future -->
-  <script type="module" src="./main.js"></script>
+  <script>
+    // Yılı otomatik güncelle
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

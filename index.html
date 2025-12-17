@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faruk Yildirim | Bento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Ionicons for clean icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <div class="bento-grid">
+
+    <!-- 1. Profile Card (2x2) -->
+    <div class="card card-profile">
+      <div class="profile-content">
+        <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Faruk" alt="Profile" class="profile-image">
+        <h1>Faruk Yildirim</h1>
+        <p>Yaratıcı Geliştirici & UI Tutkunu.</p>
+      </div>
+    </div>
+
+    <!-- 2. Location (1x1) -->
+    <div class="card card-location">
+      <span class="label">İstanbul, TR</span>
+      <div style="position: absolute; bottom: 1.5rem; right: 1.5rem;">
+        <ion-icon name="location" style="font-size: 2rem;"></ion-icon>
+      </div>
+    </div>
+
+    <!-- 3. Social: Twitter/X (1x1) -->
+    <a href="#" class="card card-social" target="_blank">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+
+    <!-- 4. Stack (1x2 Vertical) -->
+    <div class="card card-stack">
+      <h3>Tech Stack</h3>
+      <ul class="stack-list">
+        <li><ion-icon name="logo-react"></ion-icon> React</li>
+        <li><ion-icon name="logo-javascript"></ion-icon> TypeScript</li>
+        <li><ion-icon name="logo-nodejs"></ion-icon> Node.js</li>
+        <li><ion-icon name="color-palette"></ion-icon> Tailwind</li>
+      </ul>
+    </div>
+
+    <!-- 5. Social: GitHub (1x1) -->
+    <a href="#" class="card card-social" target="_blank">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+
+    <!-- 6. Quote (1x1) -->
+    <div class="card card-text">
+      "Simplicity is the ultimate sophistication."
+    </div>
+
+    <!-- 7. Work: Project 1 (2x1 Wide) -->
+    <a href="#" class="card card-project">
+      <div>
+        <h3>Modern E-Commerce</h3>
+        <span class="tag">Next.js</span>
+      </div>
+      <div style="position: absolute; bottom: 1.5rem; right: 1.5rem;">
+        <ion-icon name="arrow-forward-circle-outline" style="font-size: 2rem;"></ion-icon>
+      </div>
+    </a>
+
+    <!-- 8. Work: Project 2 (2x1 Wide) -->
+    <a href="#" class="card card-project">
+      <div>
+        <h3>Personal Blog</h3>
+        <span class="tag">Astro</span>
+      </div>
+      <div style="position: absolute; bottom: 1.5rem; right: 1.5rem;">
+        <ion-icon name="arrow-forward-circle-outline" style="font-size: 2rem;"></ion-icon>
+      </div>
+    </a>
+
+    <!-- 9. Contact (1x1) -->
+    <a href="mailto:email@example.com" class="card card-social" style="background: #007AFF; color: white;">
+      <ion-icon name="mail"></ion-icon>
+    </a>
+
+  </div>
+
+  <!-- No complex JS needed for this layout, but keeping file for future -->
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ömer Faruk Yıldırım | iOS Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Ionicons for clean icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <header class="page-header">
+      <div class="page-header-text">
+        <span class="pill">Portfolio</span>
+        <h1 class="page-title">Ömer Faruk Yıldırım</h1>
+        <p class="page-subtitle">
+          iOS Developer. Modern iOS deneyimleri, API entegrasyonları ve kullanıcı odaklı mobil çözümler geliştiriyorum.
+        </p>
+      </div>
+      <div class="page-header-actions">
+        <a href="mailto:thofaruk@gmail.com" class="btn btn-primary">İletişime geç</a>
+        <a href="benimCV01.pdf" download="Omer_Faruk_Yildirim_CV.pdf" class="btn btn-ghost">CV İndir</a>
+      </div>
+    </header>
+
+    <div class="bento-grid">
+
+      <!-- 1. Profile Card (2x2) -->
+      <div class="card card-profile">
+        <div class="profile-content">
+          <img src="./public/img/fisek.jpeg" alt="Profile" class="profile-image">
+          <h2>Ömer Faruk Yıldırım</h2>
+          <p>iOS Developer & Mobil Uygulama Geliştiricisi</p>
+          <div class="profile-tags">
+            <span>Swift</span>
+            <span>SwiftUI</span>
+            <span>Kotlin</span>
+            <span>Firebase</span>
+          </div>
+          <div class="profile-meta">
+            <span class="meta-item">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              Şu an: Freelance / Full-time fırsatlara açık
+            </span>
+            <span class="meta-item">
+              <ion-icon name="school-outline"></ion-icon>
+              Çukurova Üni. Bilgisayar Müh.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Location (1x1) -->
+      <div class="card card-location">
+        <div class="location-header">
+          <span class="label">Adana, TR</span>
+          <span class="location-pill">UTC+3 · Remote / On-site</span>
+        </div>
+        <div class="location-footer">
+          <span>Mobil dünyada modern çözümler.</span>
+          <ion-icon name="location"></ion-icon>
+        </div>
+      </div>
+
+      <!-- 3. Social: LinkedIn (1x1) -->
+      <a href="https://www.linkedin.com/in/farukyldrm01/" class="card card-social card-social-twitter" target="_blank"
+        aria-label="LinkedIn profili">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+
+      <!-- 4. Stack (1x2 Vertical) -->
+      <div class="card card-stack">
+        <h3>Tech stack</h3>
+        <ul class="stack-list">
+          <li><ion-icon name="logo-apple"></ion-icon> Swift / SwiftUI</li>
+          <li><ion-icon name="code-slash-outline"></ion-icon> Kotlin / Jetpack Compose</li>
+          <li><ion-icon name="cloud-outline"></ion-icon> Firebase / REST API</li>
+          <li><ion-icon name="git-branch-outline"></ion-icon> Git / GitHub</li>
+        </ul>
+      </div>
+
+      <!-- 5. Social: GitHub (1x1) -->
+      <a href="https://github.com/farukyldrm01" class="card card-social card-social-github" target="_blank"
+        aria-label="GitHub profili">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+
+      <!-- 6. Contact (1x1) -->
+      <a href="mailto:thofaruk@gmail.com" class="card card-social card-contact">
+        <div class="card-contact-inner">
+          <div>
+            <p class="contact-label">İletişim</p>
+            <p class="contact-text">Bir projen mi var? Konuşalım.</p>
+          </div>
+          <div class="contact-icon">
+            <ion-icon name="mail"></ion-icon>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. Experience -->
+      <div class="card card-experience">
+        <h3>Deneyim</h3>
+        <div class="role">
+          <h4>Eterna Teknoloji</h4>
+          <p>Flutter Developer • 2025</p>
+        </div>
+        <div class="role">
+          <h4>Adana Büyükşehir Bld.</h4>
+          <p>iOS Developer • 2024</p>
+        </div>
+      </div>
+
+      <!-- 8. Work: Project 1 (2x1 Wide) -->
+      <a href="#" class="card card-project" id="projects">
+        <div>
+          <h3>Hava Kirliliği Uygulaması</h3>
+          <span class="tag">SwiftUI + API</span>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Konum bazlı hava kalitesi
+            takibi.</p>
+        </div>
+        <div style="position: absolute; bottom: 1.5rem; right: 1.5rem;">
+          <ion-icon name="arrow-forward-circle-outline" style="font-size: 2rem;"></ion-icon>
+        </div>
+      </a>
+
+      <!-- 9. Work: Project 2 (2x1 Wide) -->
+      <a href="#" class="card card-project">
+        <div>
+          <h3>Soru Çözme Uygulaması</h3>
+          <span class="tag">Full Stack</span>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Sınav hazırlık ve performans
+            takibi.</p>
+        </div>
+        <div style="position: absolute; bottom: 1.5rem; right: 1.5rem;">
+          <ion-icon name="arrow-forward-circle-outline" style="font-size: 2rem;"></ion-icon>
+        </div>
+      </a>
+
+    </div>
+
+    <footer class="page-footer">
+      <span>© <span id="year"></span> Ömer Faruk Yıldırım</span>
+      <span class="dot"></span>
+      <span>Modern iOS ve Web çözümleri.</span>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
